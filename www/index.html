@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link rel="manifest" href="manifest.json">
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/guidePage/guidePage.css">
+    <link rel="stylesheet" href="css/home/home.css">
+    <link rel="stylesheet" href="css/category/category.css"/>
+    <link rel="stylesheet" href="css/account/account.css">
+
+<!--  swiper插件 -->
+    <link rel="stylesheet" href="lib/swiper/dist/css/swiper.css">
+    <script src="lib/swiper/dist/js/swiper.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js,包含ui.router -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- 专门用来调用硬件的，如摄像头，相册。 -->
+    <!-- 这个文件会动态生成 , 在打包会自动生成 -->
+
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!--  就是我那个朋友 -->
+    <script src="cordova.js"></script>
+
+
+
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/global.js"></script>
+    <script src="./modules/guidePage/guidePage.js"></script>
+    <script src="./modules/tab/tab.js"></script>
+    <script src="./modules/home/home.js"></script>
+    <script src="./modules/category/category.js"></script>
+    <script src="./modules/account/account.js"></script>
+    
+    <!--
+    	作者：offline
+    	时间：2017-02-14
+    	描述：第三方插件
+    -->
+    <!--<script src="lib/Swiper/dist/js/swiper.js"></script>-->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/ionic-image-lazy-load/ionic-image-lazy-load.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+</head>
+<body ng-app="xiaoming">
+
+    <!-- 这个就是ui-view, ionic帮助我们包装成了ui-view -->
+    <ion-nav-view></ion-nav-view>
+</body>
+
+</html>
